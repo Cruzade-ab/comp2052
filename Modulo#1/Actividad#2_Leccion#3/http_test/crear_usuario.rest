@@ -1,0 +1,7 @@
+POST http://127.0.0.1:5000/crear_usuario
+content-type: application/json
+
+{
+    "nombre": "Example Master",
+    "correo": "ejemplo@gmail.com"
+}

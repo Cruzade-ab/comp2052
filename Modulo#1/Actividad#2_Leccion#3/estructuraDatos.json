@@ -1,0 +1,13 @@
+{
+    "usuario": {
+        "id": "",
+        "nombre": "",
+        "correo": ""
+    },
+    "producto": {
+        "id": "",
+        "nombreProducto": "",
+        "descripcion": "",
+        "precio": ""
+    }
+}
