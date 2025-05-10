@@ -1,0 +1,7 @@
+### Crear nuevo día
+POST http://127.0.0.1:5000/day
+Content-Type: application/json
+
+{
+  "day": "Sábado, 10 de mayo de 2025"
+}

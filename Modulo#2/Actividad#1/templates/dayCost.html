@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="cost-container">
+  <h1><span>Adding Cost for: <span/> {{ data.date }}</h1>
+  <form id="addCostForm" class="add-cost-form">
+    <input type="hidden" id="costId" name="date" value="{{ data.id }}">
+    
+    <div class="cost-input-container">
+      <label for="costName">Name:</label>
+      <input type="text" id="costName" name="costName" required>
+    
+      <label for="costValue">Value:</label>
+      <input type="number" id="costValue" name="costValue" step="0.01" required>    
+      <button type="submit" class="btn-add">Add Cost</button>
+    </div>
+  </form>
+  
+  <!-- Lista de costos -->
+  <ul class="cost-list">
+    {% for cost in data.costs %}
+      <li class="cost-item" id="{{ cost.name }}">
+        <span># {{ cost.name }}: ${{ cost.cost }}</span>
+        <button class="btn-delete" onclick="deleteCost('{{ cost.name }}')">Delete</button>        
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <h3 class="cost-total">
+    Gasto Total: <span>$ {{ data.costs | sum(attribute='cost') }}</span>
+  </h3>
+  
+  
+<script src="{{ url_for('static', filename='js/costCreation.js') }}"></script>
+
+{% endblock %}

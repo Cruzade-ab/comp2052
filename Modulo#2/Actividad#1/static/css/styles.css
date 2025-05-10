@@ -1,0 +1,172 @@
+html, body {
+    background-color: #f3f3eb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: rgb(185, 221, 236);
+  flex: 1; 
+  flex-direction: column;
+  width: 100%;
+}
+
+  .header-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 4px solid #06202B;
+  }
+  
+  .header-title {
+    margin: 0;
+    justify-self: start;
+    color: #077A7D;
+  }
+  
+  .header-links {
+    align-self: flex-end;
+    align-self: self-end;
+    display: flex;
+    gap: 16px;
+    margin-right: 10px;
+  }
+  
+  .header-links a {
+    text-decoration: none;
+    color: #077A7D;
+    font-weight: 500;
+    background-color: #d1e4ec;
+    padding: 14px;
+    border: 2px;
+    border-radius: 6px;
+  }
+
+  .indexTitle {
+    text-align: center;
+    color: #077A7D;
+  }
+
+
+
+  /* Days*/
+  .daysContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px 20px;
+    
+  }
+
+  .dayItem{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid rgba(0, 0, 0, 0.534) ;
+    border-radius: 15px;
+    background-color: #f3f3eb ;
+  }
+  .dayItem h2{
+    align-self: center;
+    color: #27548A;
+  }
+  .dayItem h3 {
+    margin-top: auto; 
+    padding-right: 6px;     
+    align-self: flex-end;
+  }
+
+  .dayItem h3 span {
+    color: red;
+  }
+
+  .dayItem ul {
+    flex-grow: 1;              
+    align-self: center;
+    padding-inline-start: 0;
+    margin-top: 4px;
+    overflow-y: auto;         
+  }
+  
+  .day-form-container{
+    justify-self: center;
+    align-self: center;
+  }
+
+  .day-form-container input{
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+
+/* Cost Page */
+
+.cost-container{
+  justify-self: center;
+  margin-top: 14px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid rgba(0, 0, 0, 0.534) ;
+  border-radius: 15px;
+  background-color: #f3f3eb ;
+}
+
+.cost-container h1{ 
+  align-self: center;
+  color: #077A7D;
+}
+
+.cost-input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.cost-input-container input {
+  width: 150px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+
+.btn-add{
+  background-color:rgb(24, 190, 24);
+  padding: 12px;
+  border-radius: 12px;
+}
+.cost-item {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+.cost-item button{
+  background-color: rgb(172, 47, 47);
+  padding: 6px;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+
+.cost-list{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4px;
+}
+
+.cost-total{
+  align-self: center;
+}

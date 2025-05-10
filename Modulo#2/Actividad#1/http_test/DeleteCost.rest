@@ -1,0 +1,7 @@
+### Eliminar un costo del día con ID 1
+DELETE http://127.0.0.1:5000/day/3/cost
+Content-Type: application/json
+
+{
+  "costName": "Cena"
+}

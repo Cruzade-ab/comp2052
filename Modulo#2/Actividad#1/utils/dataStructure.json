@@ -1,0 +1,14 @@
+{
+    "data" : {
+        "days": [
+            {
+                "id": 1,
+                "date": "Viernes, 9 de mayo de 2025",
+                "costs": [
+                    {"name": "Cost1", "cost": 50.0},
+                    {"name": "Cost2", "cost": 20.5}
+                ]
+            }
+        ]
+    }
+}

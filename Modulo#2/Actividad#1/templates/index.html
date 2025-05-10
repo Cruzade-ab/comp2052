@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<h1 class="indexTitle">All Cost Group Registerd</h1>
+<div class="daysContainer">
+    {% for day in data.days %}
+    <a href="/day/{{ day.id }}" style="text-decoration: none; color: inherit;">
+    <div class="dayItem">
+      <h2>{{ day.date }}</h2>
+      <ul class="costList">
+        {% set total_cost = 0 %}
+        {% for cost in day.costs %}
+          <li>{{ cost.name }}: ${{ cost.cost }}</li>
+        {% endfor %}
+      </ul>
+      <h3>Gasto Total: 
+       <span>$ {{ day.costs | sum(attribute='cost') }} <span/>
+      </h3>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+{% endblock %}

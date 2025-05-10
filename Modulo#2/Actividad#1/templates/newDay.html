@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="day-form-container">
+  <h1 class="indexTitle">Create a Cost Group</h1>
+  <form id="addDayForm" class="add-day-form">
+      <input
+        type="text"
+        id="dayDate"
+        placeholder="Enter a custom name"
+        required
+      />
+      <button type="submit" class="btn btn-add">Add Group</button>
+  </form>
+</div>
+
+<!-- Incluir el archivo JS -->
+<script src="{{ url_for('static', filename='js/dayCreation.js') }}"></script>
+
+{% endblock %}
