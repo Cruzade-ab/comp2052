@@ -6,5 +6,5 @@ username=johndoe&password=secreto
 
 ###
 
-### Intento de acceso al panel de admin (debería dar error 403)
+### Intento de acceso al panel de admin 
 GET http://localhost:5000/admin
