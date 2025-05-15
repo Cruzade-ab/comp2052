@@ -1,0 +1,10 @@
+### Login como usuario regular
+POST http://localhost:5000/login
+Content-Type: application/x-www-form-urlencoded
+
+username=johndoe&password=secreto
+
+###
+
+### Intento de acceso al panel de admin (debería dar error 403)
+GET http://localhost:5000/admin
